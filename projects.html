@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Sata Construction</title>
+  <link rel="stylesheet" href="style.css">
+
+<!-- 🌟 Modern Responsive Navbar -->
+<header class="navbar">
+  <div class="logo">
+    <img src="images/logo.png" alt="Sata Construction Logo" />
+  </div>
+
+<nav class="nav-links" id="nav-links">
+  <a href="index.html" data-page="index.html">Home</a>
+  <a href="about.html" data-page="about.html">About</a>
+  <a href="services.html" data-page="services.html">Services</a>
+  <a href="projects.html" data-page="projects.html">Projects</a>
+  <!-- <a href="testimonials.html" data-page="testimonials.html">Testimonials</a> -->
+  <a href="contact.html" data-page="contact.html">Contact</a>
+</nav>
+
+
+
+
+  <a href="contact.html" class="btn book-now">Book now</a>
+
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+</header>
+  
+
+  <section id="projects">
+    <h2 class="section-title">Our Projects</h2>
+    <div class="project-gallery">
+      
+      <div class="project-item">
+        <img src="images/project1.jpg" alt="Luxury Villa Construction">
+        <div class="project-info">
+          <h3>Luxury Villa</h3>
+          <p>Designed and built a modern villa with premium materials, energy-efficient solutions, and elegant finishes.</p>
+        </div>
+      </div>
+  
+      <div class="project-item">
+        <img src="images/project2.jpg" alt="Commercial Mall Project">
+        <div class="project-info">
+          <h3>City Mall Complex</h3>
+          <p>Completed a large-scale shopping mall with sustainable features and modern architectural designs.</p>
+        </div>
+      </div>
+  
+      <div class="project-item">
+        <img src="images/project3.jpg" alt="Office Renovation">
+        <div class="project-info">
+          <h3>Office Renovation</h3>
+          <p>Transformed an outdated office into a vibrant, functional workspace optimized for productivity.</p>
+        </div>
+      </div>
+       <div class="project-item">
+      <img src="images/new building.jpeg" alt="Commercial Complex">
+      <div class="project-info">
+        <h3>new bulding</h3>
+        <p>Multi-floor commercial building designed for business spaces.</p>
+      </div>
+    </div>
+
+  
+      <div class="project-item">
+        <img src="images/project4.jpg" alt="Custom Kitchen Remodel">
+        <div class="project-info">
+          <h3>Kitchen Remodel</h3>
+          <p>Designed a custom kitchen combining luxury, modern appliances, and stylish finishes tailored to the client’s taste.</p>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+  <!-- 🔶 Projects Page CTA for Consistency -->
+<section class="cta-banner reveal">
+  <h2>Impressed with Our Projects?</h2>
+  <p>Our team is ready to help you start your own project with precision and care. Let’s bring your vision to life!</p>
+  <a href="contact.html" class="btn">Get a Free Consultation</a>
+</section>
+
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <p>&copy; 2025 Sata Construction. All Rights Reserved.</p>
+        <p><strong>Address:</strong> 123 Builder Street, City, Country</p>
+        <p><strong>Email:</strong> info@sataconstruction.com</p>
+        <p><strong>Phone:</strong> +123 456 7890</p>
+      </div>
+  
+      <div class="footer-right">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+          <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+          <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+    <!-- 💬 WhatsApp Button -->
+    <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn">💬 Chat</a>
+  
+    <!-- 🔝 Back to Top -->
+    <a href="#hero" class="back-to-top">↑</a>
+  
+    <script src="script.js"></script>
+</body>
+
+<script>
+  // Get the current page (e.g., "services.html")
+  const currentPage = window.location.pathname.split('/').pop();
+
+  // Highlight the matching nav link
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    if (link.getAttribute('data-page') === currentPage) {
+      link.classList.add('active');
+    }
+  });
+</script>
+
+</html>

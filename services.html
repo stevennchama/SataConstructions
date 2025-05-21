@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional construction services by Sata Construction. We build your future with quality and integrity." />
+  <title>Our Services - Sata Construction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body id="top">
+
+<!-- 🌟 Modern Responsive Navbar -->
+<header class="navbar">
+  <div class="logo">
+    <img src="images/logo.png" alt="Sata Construction Logo" />
+  </div>
+
+<nav class="nav-links" id="nav-links">
+  <a href="index.html" data-page="index.html">Home</a>
+  <a href="about.html" data-page="about.html">About</a>
+  <a href="services.html" data-page="services.html">Services</a>
+  <a href="projects.html" data-page="projects.html">Projects</a>
+  <!-- <a href="testimonials.html" data-page="testimonials.html">Testimonials</a> -->
+  <a href="contact.html" data-page="contact.html">Contact</a>
+</nav>
+
+
+
+
+  <a href="contact.html" class="btn book-now">Book now</a>
+
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+</header>
+
+
+
+
+<!-- ✅ Services Section -->
+<section id="services">
+  <h2 class="section-title">Our Professional Services</h2>
+
+  <div class="service-cards">
+
+    <div class="service">
+      <img src="images/carpintering.jpeg" alt="Residential Construction">
+      <h3>Residential Construction</h3>
+      <p>At Sata Construction, we create beautiful homes designed with care and precision. Whether it’s a family residence or a luxurious villa, we focus on quality materials, energy efficiency, and elegant finishes to bring your vision to life.</p>
+      <p><strong>Highlights:</strong> Custom designs, eco-friendly solutions, and premium craftsmanship.</p>
+    </div>
+
+    <div class="service">
+      <img src="images/service2.jpg" alt="Commercial Buildings">
+      <h3>Commercial Buildings</h3>
+      <p>We deliver reliable commercial construction services for businesses of all sizes. From office spaces and retail stores to warehouses and complex facilities, our experienced team ensures every project is completed on time and within budget.</p>
+      <p><strong>Industries Served:</strong> Retail, education, healthcare, hospitality, and more.</p>
+    </div>
+
+    <div class="service">
+      <img src="images/new building.jpeg" alt="New Construction">
+      <h3>New Construction</h3>
+      <p>We build a wide range of structures, completing all construction phases from the foundation to the roof and everything in between.</p>
+      <p><strong>Industries Served:</strong> Retail, education, healthcare, hospitality, and more.</p>
+    </div>
+
+    <div class="service">
+      <img src="images/renovation.jpeg" alt="Renovations & Remodeling">
+      <h3>Renovations & Remodeling</h3>
+      <p>Ready to upgrade your space? Our renovation experts handle everything from kitchen and bathroom remodels to complete home or office makeovers. We ensure a smooth process with results you’ll love for years to come.</p>
+      <p><strong>What We Offer:</strong> Interior and exterior renovations, modern upgrades, and thoughtful redesigns.</p>
+    </div>
+
+  </div>
+</section>
+
+ 
+<!-- CTA Banner -->
+<section class="cta-banner">
+  <div class="cta-content">
+    <h2>Ready to Build Your Dream?</h2>
+    <p>Our expert team is ready to turn your vision into reality. Let’s connect and make it happen!</p>
+    <a href="contact.html" class="cta-btn">Contact Us Today</a>
+  </div>
+</section>
+
+
+
+ <!-- Footer -->
+ <footer>
+  <div class="footer-content">
+    <div class="footer-left">
+      <p>&copy; 2025 Sata Construction. All Rights Reserved.</p>
+      <p><strong>Address:</strong> 123 Builder Street, City, Country</p>
+      <p><strong>Email:</strong> info@sataconstruction.com</p>
+      <p><strong>Phone:</strong> +123 456 7890</p>
+    </div>
+
+    <div class="footer-right">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+        <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- 💬 WhatsApp Button -->
+<a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn">💬 Chat</a>
+
+<!-- 🔝 Back to Top -->
+<a href="#top" class="back-to-top">↑</a>
+
+<script>
+  const currentPage = window.location.pathname.split('/').pop();
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    if (link.getAttribute('data-page') === currentPage) {
+      link.classList.add('active');
+    }
+  });
+</script>
+ <script>
+  const backToTopBtn = document.querySelector('.back-to-top');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.add('show');
+    } else {
+      backToTopBtn.classList.remove('show');
+    }
+  });
+</script>
+
+
+</body>
+
+
+
+
+</html>

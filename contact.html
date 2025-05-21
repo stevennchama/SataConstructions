@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Sata Construction</title>
+  <link rel="stylesheet" href="style.css">
+
+<!-- 🌟 Modern Responsive Navbar -->
+<header class="navbar">
+  <div class="logo">
+    <img src="images/logo.png" alt="Sata Construction Logo" />
+  </div>
+
+  <nav class="nav-links" id="nav-links">
+  <a href="index.html" data-page="index.html">Home</a>
+  <a href="about.html" data-page="about.html">About</a>
+  <a href="services.html" data-page="services.html">Services</a>
+  <a href="projects.html" data-page="projects.html">Projects</a>
+  <!-- <a href="testimonials.html" data-page="testimonials.html">Testimonials</a> -->
+  <a href="contact.html" data-page="contact.html">Contact</a>
+</nav>
+
+
+
+  <a href="contact.html" class="btn book-now">Book now</a>
+
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+</header>
+
+  
+  
+
+  <section class="contact-page">
+    <div class="contact-banner">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you. Reach out for a free consultation or fill out the form.</p>
+    </div>
+  
+    <div class="contact-container">
+      <!-- Contact Details -->
+      <div class="contact-info">
+        <p><strong>📞 Phone:</strong> +123 456 7890</p>
+        <p><strong>📧 Email:</strong> <a href="mailto:info@sataconstruction.com">info@sataconstruction.com</a></p>
+        <p><strong>📍 Address:</strong> 123 Builder Street, City, Country</p>
+      </div>
+  
+      <!-- Contact Form -->
+      <form class="contact-form" id="contactForm">
+        <input type="text" name="name" placeholder="Your Full Name" required>
+        <input type="email" name="email" placeholder="Your Email Address" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+  
+      <!-- ✅ Success Message -->
+      <div class="success-message" id="successMessage" style="display:none;">
+        ✅ Your message has been sent successfully! We'll get back to you soon.
+      </div>
+    </div>
+  </section>
+  
+  
+  
+    
+
+<!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-left">
+      <p>&copy; 2025 Sata Construction. All Rights Reserved.</p>
+      <p><strong>Address:</strong> 123 Builder Street, City, Country</p>
+      <p><strong>Email:</strong> info@sataconstruction.com</p>
+      <p><strong>Phone:</strong> +123 456 7890</p>
+    </div>
+
+    <div class="footer-right">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+        <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- 💬 WhatsApp Button -->
+<a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn">💬 Chat</a>
+
+<!-- 🔝 Back to Top -->
+<a href="#top" class="back-to-top">↑</a>
+
+<script>
+  // Get the current page (e.g., "services.html")
+  const currentPage = window.location.pathname.split('/').pop();
+
+  // Highlight the matching nav link
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    if (link.getAttribute('data-page') === currentPage) {
+      link.classList.add('active');
+    }
+  });
+</script>
+
+
+</body>
+
+
+
+</html>
